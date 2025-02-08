@@ -1,0 +1,38 @@
+#nameError, #emailError, #passwordError {
+    color: red;
+    display: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    color: rgb(17, 70, 243);
+    transition: 0.7s;
+    cursor: pointer;
+}
+h1:hover{
+    color: skyblue;
+}
+.hdr1 .d2{
+    background: rgb(32, 153, 245);
+}
+.hdr1 .d2 .navbar{
+    text-align: center;
+}
+.hdr1 .d2 .navbar a{
+    transition: 0.7s;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(15, 81, 172);
+    padding: 20px;
+    font-size: large;
+}
+.hdr1 .d2 .navbar a:hover{
+    background: rgb(8, 61, 147);
+    color: skyblue;
+}
+.f1 .btn{
+    text-align: center;
+}

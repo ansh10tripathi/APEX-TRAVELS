@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: solid;
+            border-color: rgb(0, 110, 255);
+            border-width: 5px;
+            border-radius: 40px;
+        }
+        input, button {
+            width: 90%;
+            padding: 2px;
+            margin: 5px 0;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+        .signcol {
+            color: rgb(0, 149, 255);
+            align-items: center;
+            justify-content: center;
+        }
+        #submit {
+            background-color: rgb(0,72,255);
+            color: whitesmoke;
+            border: solid;
+            border-color: rgb(0, 72, 255);
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="signcol">SIGN-UP</h2>
+        <form id="signupForm">
+            Username
+            <input type="text" id="name" placeholder="Full Name" required>
+            <span class="error" id="nameError"></span>
+            <br>
+            <br>     
+            Email
+            <input type="email" id="email" placeholder="Email" required>
+            <span class="error" id="emailError"></span>
+            <br>
+            <br>
+            Password
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="error" id="passwordError"></span>
+            <br>
+            <br>
+            Profile Image
+            <input type="file" id="profileImage" accept="image/*" required>
+            <span class="error" id="imageError"></span>
+            <br>
+            <br>
+            Date of Birth
+            <input type="date" id="dob" required>
+            <span class="error" id="dobError"></span>
+            <br>
+            <br>
+            <button type="submit" id="submit"><a href="Home.html">Sign Up</a></button>
+        </form>7    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let isValid = true;
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const profileImage = document.getElementById('profileImage').files[0];
+            const dob = document.getElementById('dob').value;
+            
+            document.getElementById('nameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+            document.getElementById('passwordError').innerText = '';
+            document.getElementById('imageError').innerText = '';
+            document.getElementById('dobError').innerText = '';
+            
+            if (name.length < 3) {
+                document.getElementById('nameError').innerText = 'Name must be at least 3 characters long';
+                isValid = false;
+            }
+            
+            if (!email.includes('@')) {
+                document.getElementById('emailError').innerText = 'Enter a valid email';
+                isValid = false;
+            }
+            
+            if (password.length < 6) {
+                document.getElementById('passwordError').innerText = 'Password must be at least 6 characters';
+                isValid = false;
+            }
+            
+            if (!profileImage) {
+                document.getElementById('imageError').innerText = 'Please upload a profile image';
+                isValid = false;
+            }
+            
+            if (!dob) {
+                document.getElementById('dobError').innerText = 'Please select your date of birth';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert('Sign up successful!');
+            }
+        });
+    </script>
+</body>
+</html>

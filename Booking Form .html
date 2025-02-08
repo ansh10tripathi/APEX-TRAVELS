@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <h1>Car Booking Form</h1>
+    <ol>
+        <form name="submit-to-google-sheet-1">
+        <li>Personal Information</li><br>
+        <ul>
+            <li>
+                <label for="full name">Full Name: </label>
+                <input type="text" name="Full name" placeholder="Enter your name">
+            </li><br>
+            <li>
+                <label for="Date of Birth">Date of Birth: </label>
+                <input type="date" name="Date of Birth" placeholder="01-01-2002">
+            </li><br>
+            <li>
+                <label for="Address">Address:</label>
+                <input type="text" name="Address" placeholder="Enter your Address">
+            </li> <br>
+            <li>
+                <label for="city">City: </label>
+                <input type="text" name="City" placeholder="Enter your City">
+            </li> <br>
+            <li>
+                <label for="State">State: </label>
+                <input type="text" name="State" placeholder="Enter your State">
+            </li> <br>
+            <li>
+                <label for="Zip Code">Zip Code: </label>
+                <input type="number" name="Zip Code" placeholder="Enter your Zip code">
+            </li> <br>
+            <li>
+                <label for="Email">Email: </label>
+                <input type="email" name="Email" placeholder="Enter your Email">
+            </li> <br>
+            <li>
+                <label for="Phone Number">Phone Number: </label>
+                <input type="number" name="Phone Number" placeholder="0123-456-789">
+            </li>
+        </ul> <br>
+        <li>Car Details:</li> <br>
+        <ul>
+            <li>
+                <label for="Car Model">Car Model:</label>
+                <input type="text" name="Car Model" placeholder="Enter Car Model">
+            </li> <br>
+            <li>
+                <label for="Car Colour Preference">Car Colour Preference:</label>
+                <input type="text" name="Car Colour Preference" placeholder="Enter Car Colour">
+            </li>
+        </ul> <br>
+        <li>Documentation:</li> <br>
+        <ul>
+            <li>
+                <label for="License Number">License Number:</label>
+                <input type="text" name="License Number" placeholder="Enter your License no..">
+            </li> <br>
+            <li>
+                <label for="Identity Proof">Identity Proof Type:</label>
+                <input type="text" name="Identity Proof" placeholder="Enter your Identity Proof">
+            </li> <br>
+            <li>
+                <label for="Upload Proof of ID">Upload Proof Of ID:</label>
+                <input type="file" name="Upload Proof Of ID" accept="image">
+            </li>
+        </ul> <br>
+        <li>Signature:</li> <br>
+        <ul>
+            <li>
+                <label for="Customer Signature">Customer Signature:</label>
+                <input type="text" name="Customer Signature" placeholder="Enter Your Signature here">
+            </li> <br>
+            <li>
+                <label for="Date">Date:</label>
+                <input type="date" name="Date" placeholder="Enter Date">
+            </li> <br>
+        </ul>
+    </ol>
+   <input type="submit" name="submit" id="submit" value="submit">
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyMASEVgzwI7kpPvNNlwUkwiDcijifPWQYQSfuFZuzRWzLIuMZEelGB5_t5OjJfJ0Oi/exec'
+    const form = document.forms['submit-to-google-sheet-1']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</form>
+</body>
+</html>

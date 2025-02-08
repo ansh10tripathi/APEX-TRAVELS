@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Destination Explorer</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #F6A800;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.1); /* Grow on hover */
+}
+
+/* Services Section */
+#services {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonial-slide.active {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+     </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Discover India Like Never Before</h1>
+            <button class="cta-button">Plan Your Dream Trip</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="images/service1.jpg" alt="Service 1">
+                <h3>Premium Travel Plans</h3>
+                <p>Tailor-made itineraries just for you!</p>
+            </div>
+            <div class="card">
+                <img src="images/service2.jpg" alt="Service 2">
+                <h3>Luxury Transportation</h3>
+                <p>Travel in comfort with our premium transport services.</p>
+            </div>
+            <div class="card">
+                <img src="images/service3.jpg" alt="Service 3">
+                <h3>Exclusive Merchandise</h3>
+                <p>Take home a piece of India’s rich culture.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Travelers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide">
+                <p>"The best trip ever! Thanks to [Your Website Name]." – Anna, USA</p>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Amazing experience, everything was seamless!" – Lucas, Germany</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Travel Destination Explorer | All rights reserved</p>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+     <script>
+        // Smooth Scrolling for CTA button
+document.querySelector('.cta-button').addEventListener('click', function () {
+    window.scrollTo({
+        top: document.getElementById('services').offsetTop,
+        behavior: 'smooth'
+    });
+});
+
+// Testimonial Slider Animation
+let currentSlide = 0;
+const slides = document.querySelectorAll('.testimonial-slide');
+
+function changeSlide() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+setInterval(changeSlide, 3000);  // Change slide every 3 seconds
+
+     </script>
+</body>
+</html>

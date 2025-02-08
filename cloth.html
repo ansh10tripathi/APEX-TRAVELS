@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .section-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .clothing-section {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .clothing-item {
+            width: 22%;
+            background: #fff;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .clothing-item:hover {
+            transform: scale(1.05);
+        }
+
+        .clothing-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .clothing-item h3 {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .clothing-item p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .clothing-item .price {
+            font-size: 1rem;
+            color: #2c3e50;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .clothing-item .size-selection {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .clothing-item select {
+            padding: 5px;
+            font-size: 0.9rem;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+
+        .clothing-item button {
+            background-color: #28a745;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .clothing-item button:hover {
+            background-color: #218838;
+        }
+        .rem {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section-container">
+        <div class="section-title">Men's Clothing</div>
+        <div class="clothing-section">
+            <div class="clothing-item">
+                <img src="https://pluspng.com/img-png/sikh-turban-png-download-sikh-turban-png-images-transparent-gallery-advertisement-1000.png"
+                    alt="Turban">
+                <h3>Traditional Turban</h3>
+                <p>Stylish turban worn during cultural and religious ceremonies.</p>
+                <p class="price">$2</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://png.pngtree.com/png-clipart/20230715/ourmid/pngtree-indian-red-turban-side-view-png-image_7507899.png"
+                    alt="Kurta">
+                <h3>Rajasthani Turban</h3>
+                <p>Comfortable cotton kurta perfect for any occasion.</p>
+                <p class="price">$5</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://editzstock.com/wp-content/uploads/2022/05/Indian-Wedding-Sherwani-png-1.png"
+                    alt="Sherwani">
+                <h3>Sherwani</h3>
+                <p>Elegant wedding attire with intricate designs.</p>
+                <p class="price">$19.99</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://graficsea.com/wp-content/uploads/2022/03/Golden-Kurta-Pajama-for-Men-.png"
+                    alt="Kurta">
+                <h3>Men's Kurta</h3>
+                <p>Perfect for festivals and cultural events.</p>
+                <p class="price">$10</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="http://pngimg.com/uploads/leather_jacket/leather_jacket_PNG40.png" alt="Jacket">
+                <h3>Leather Jacket</h3>
+                <p>Stylish leather jacket for winters.</p>
+                <p class="price">$7</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://srilankanroots.com/wp-content/uploads/Lungi-L001-600x800.png" alt="Lungi">
+                <h3>Lungi</h3>
+                <p>Comfortable traditional wear for men.</p>
+                <p class="price">$5</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="http://pluspng.com/img-png/kurta-png-14958053770-mushrooms-green-kurta-for-eid-png-225.png"
+                    alt="Churidar">
+                <h3>Churidar</h3>
+                <p>Traditional and elegant churidar pants for men.</p>
+                <p class="price">$12</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://www.pngkey.com/png/full/260-2601355_kurta-pajama-pajamas.png" alt="Pajama">
+                <h3>Kurta</h3>
+                <p>Comfortable cotton kurta for daily wear.</p>
+                <p class="price">$8</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="section-title">Women's Clothing</div>
+        <div class="clothing-section">
+            <!-- Add Women's Clothing Items Here (Similar to Men's) -->
+        </div>
+        <div class="clothing-section">
+            <div class="clothing-item">
+                <img src="https://www.pngkey.com/png/full/244-2447715_women-designer-saree-png-transparent-sarees-for-women.png"
+                    alt="Saree">
+                <h3>Elegant Saree</h3>
+                <p>Beautiful traditional saree for special occasions.</p>
+                <p class="price">$50</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://pngpix.com/images/hd/green-embroidered-kurtiwith-dupatta-35uft2bub6lz0jxh.jpg"
+                    alt="Kurti">
+                <h3>Designer Kurti</h3>
+                <p>Stylish and comfortable ethnic wear.</p>
+                <p class="price">$30</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://pngpix.com/images/hd/elegant-red-bridal-lehenga-36rmwcdlbonoe7g3.jpg" alt="Lehenga">
+                <h3>Bridal Lehenga</h3>
+                <p>Exquisite lehenga for wedding celebrations.</p>
+                <p class="price">$120</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+            <div class="clothing-item">
+                <img src="https://www.pngkey.com/png/full/443-4434952_jacket-frock-suit-png-free-background-top-amazon.png"
+                    alt="Anarkali">
+                <h3>Embroidered Anarkali</h3>
+                <p>Graceful and flowy traditional outfit.</p>
+                <p class="price">$80</p>
+                <button class="rem"><a href="qr.html">Buy Now</a></button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

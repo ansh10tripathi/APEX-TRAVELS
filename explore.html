@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .explore-container {
+            width: 90%;
+            max-width: 1500px;
+            margin: 50px auto;
+            text-align: center;
+            position: relative;
+            bottom: 70px;
+        }
+
+        .slider-container {
+            position: relative;
+            top: 200px;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-item {
+            min-width: 50%;
+
+            height: 100%;
+
+            position: relative;
+        }
+
+        .slider-item img {
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .see-more {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 8px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .see-more:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        .heading {
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 50px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1 class="heading">EXPLORE INDIA</h1>
+    <div class="explore-container">
+        <div class="slider-container">
+            <div class="slider-wrapper" id="slider">
+                <div class="slider-item">
+                    <img src="https://cdn.mos.cms.futurecdn.net/asMq6cVwZsckf8sGUaRJU4-1200-80.jpg" alt="Taj Mahal">
+                    <button class="see-more">Taj Mahal</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://wallpaperaccess.com/full/4850858.jpg" alt="Gateway of India">
+                    <button class="see-more">Explore Gateway</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://mentoworld.com/wp-content/uploads/2023/04/houseboat-kerala-backwaters-india-scaled.jpg"
+                        alt="Kerala Backwaters">
+                    <button class="see-more">Discover Kerala</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/09/Popular-Ghats-in-Varanasi.jpg?fit=1276%2C850&ssl=1"
+                        alt="Varanasi Ghat">
+                    <button class="see-more">Visit Varanasi</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.tripsavvy.com/thmb/Afl1v6bgmGid9kPfseymDiAYWa0=/3595x2397/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-518387310-04a30994bfb1461bb8000f1864ca1fc5.jpg"
+                        alt="Jaipur Palace">
+                    <button class="see-more">Explore Jaipur</button>
+                </div>
+                <div class="slider-item">
+                    <img src="http://getwallpapers.com/wallpaper/full/5/f/1/741144-download-himalayas-wallpaper-2560x1600-for-android-50.jpg"
+                        alt="Himalayas">
+                    <button class="see-more">Himalayan Adventure</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://wallpaperaccess.com/full/4822006.jpg"
+                        alt="Golden Temple, Amritsar">
+                    <button class="see-more">Golden Temple</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.maduraicorporation.co.in/img/placevisit/large/amman-temple.jpg"
+                        alt="Meenakshi Temple, Madurai">
+                    <button class="see-more">Meenakshi Temple</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.naturetravelagency.com/uploads/1698823201tourism%20in%20sundarbans.jpg"
+                        alt="Sundarbans, West Bengal">
+                    <button class="see-more">Sundarbans</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPN3D21Vd3Rd_THoYaIX_t_kNzhjjNKk4aQ&s"
+                        alt="Cherrapunji, Meghalaya">
+                    <button class="see-more">Cherrapunji</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.ytimg.com/vi/ZiRLz9s669I/maxresdefault.jpg" alt="Rann of Kutch, Gujarat">
+                    <button class="see-more">Rann of Kutch</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.hindustantimes.com/ht-img/img/2024/01/11/1600x900/renaldo-matamoro-weJBleMT_CA-unsplash_1628499114639_1704974667077.jpg"
+                        alt="Andaman & Nicobar Islands">
+                    <button class="see-more">Andaman & Nicobar Islands</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.india.com/wp-content/uploads/2024/11/Dal-Lake_.jpg" alt="Dal Lake, Srinagar">
+                    <button class="see-more">Dal Lake, Srinagar</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://karnatakatourism.org/wp-content/uploads/2020/05/Vastuchitra_AnupGandhe_Karnataka-1.jpg"
+                        alt="Hampi, Karnataka">
+                    <button class="see-more">Hampi, Karnataka</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1553857212/Kaziranga%20National%20Park%20in%20Assam_1553856939.jpg"
+                        alt="Kaziranga National Park">
+                    <button class="see-more">Kaziranga National Park, Assam</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://aurangabadtourism.in/images/places-to-visit/header/ellora-caves-aurangabad-tourism-entry-fee-timings-holidays-reviews-header.jpg"
+                        alt="Ajanta & Ellora Caves, Maharashtra">
+                    <button class="see-more">Ajanta & Ellora Caves</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.trekkinginindia.com/images/hidden-himalayas-sikkim-trek.jpg"
+                        alt="Sikkim Himalayan Range">
+                    <button class="see-more">Sikkim Himalayan Range</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://wildhilladventure.com/wp-content/uploads/2024/08/ZIRO1.png"
+                        alt="Ziro Valley, Arunachal Pradesh">
+                    <button class="see-more">Ziro Valley</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.vivantahotels.com/content/dam/thrp/destinations/Kumarakom/16x7intro/Intro-16x7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+                        alt="Kumarakom, Kerala">
+                    <button class="see-more">Kumarakom</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/mahabalipuram-1654870108_c538505993052d39e713.webp"
+                        alt="Mahabalipuram, Tamil Nadu">
+                    <button class="see-more">Mahabalipuram</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.tripsavvy.com/thmb/S5sXee7ixAAm-aj3_xBtAQsPi-s=/2123x1412/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-533638374-5b9ced74c9e77c0050b73539.jpg   "
+                        alt="Jaisalmer Fort, Rajasthan">
+                    <button class="see-more">Jaisalmer Fort</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.bontravelindia.com/wp-content/uploads/2023/03/Best-Places-to-Visit-in-Spiti-Himachal-Pradesh-1000x565.jpg"
+                        alt="Spiti Valley, Himachal Pradesh">
+                    <button class="see-more">Spiti Valley</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://alternativetoursindia.com/wp-content/uploads/2018/10/konark-sun-temple-odisha.jpg"
+                        alt="Konark Sun Temple, Odisha">
+                    <button class="see-more">Konark Sun Temple</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2023/01/Places-To-Visit-In-Bodh-Gaya.jpg"
+                        alt="Bodh Gaya, Bihar">
+                    <button class="see-more">Bodh Gaya</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://ihplb.b-cdn.net/wp-content/uploads/2023/03/Majuli-Assam.jpg"
+                        alt="Majuli Island, Assam">
+                    <button class="see-more">Majuli Island</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www.kajaawa.com/wp-content/uploads/2022/05/Seven-Sisters-Falls-5-kaga.jpg"
+                        alt="Shillong, Meghalaya">
+                    <button class="see-more">Shillong</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://memorableindia.com/blog/wp-content/uploads/2020/03/coorg-karnataka.jpg"
+                        alt="Coorg, Karnataka">
+                    <button class="see-more">Coorg</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://static.toiimg.com/photo/46916653.cms" alt="Rameswaram, Tamil Nadu">
+                    <button class="see-more">Rameswaram</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/TawangMonastery-ArunachalPradesh-1.jpg"
+                        alt="Tawang, Arunachal Pradesh">
+                    <button class="see-more">Tawang</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/lake-pichola-udaipur-rajasthan-2-attr-hero?qlt=82&ts=1727353271225"
+                        alt="Udaipur, Rajasthan">
+                    <button class="see-more">Udaipur</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Pondicherry-Rock_beach_aerial_view.jpg/1200px-Pondicherry-Rock_beach_aerial_view.jpg"
+                        alt="Pondicherry">
+                    <button class="see-more">Pondicherry</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://sandpebblestours.com/wp-content/uploads/2018/08/Odisha-beach-tour.jpg"
+                        alt="Chandipur Beach, Odisha">
+                    <button class="see-more">Chandipur Beach</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://cdn.britannica.com/27/242227-050-48358A10/Mysore-Palace-Mysuru-Karnataka-India.jpg"
+                        alt="Mysore Palace, Karnataka">
+                    <button class="see-more">Mysore Palace</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/om-beach-gokarna-karnataka-tri-side?qlt=82&ts=1727164384153"
+                        alt="Gokarna, Karnataka">
+                    <button class="see-more">Gokarna</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider-item');
+        const totalSlides = slides.length;
+        const sliderWrapper = document.getElementById('slider');
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 2) % totalSlides;
+            sliderWrapper.style.transform = `translateX(-${currentSlide * 50}%)`;
+        }
+
+        setInterval(nextSlide, 3000); 
+    </script>
+</body>
+
+</html>
